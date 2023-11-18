@@ -1,9 +1,7 @@
 // テンプレート　単体
 function importCsv(CSV_name, sheet_name) {
   let fileName = CSV_name;
-  let spreadsheet = SpreadsheetApp.openById(
-    "1ULOWr2Af-szHgNTTiyRqUoZFILh5h5wk3yJqElU40p8"
-  );
+  let spreadsheet = SpreadsheetApp.openById("");
   let sheet = spreadsheet.getSheetByName(sheet_name);
   let files = DriveApp.getFilesByName(fileName);
   if (files.hasNext()) {
@@ -21,9 +19,7 @@ function importCsv(CSV_name, sheet_name) {
 // テンプレート　結合
 function importCombinedCSV(CSV_name01, CSV_name02, sheet_name) {
   let fileNames = [CSV_name01, CSV_name02];
-  let spreadsheet = SpreadsheetApp.openById(
-    "1ULOWr2Af-szHgNTTiyRqUoZFILh5h5wk3yJqElU40p8"
-  );
+  let spreadsheet = SpreadsheetApp.openById("");
   let sheet = spreadsheet.getSheetByName(sheet_name);
   let combinedData = [];
   let isFirstFile = true;

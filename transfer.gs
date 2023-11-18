@@ -1,8 +1,6 @@
 // テンプレート
 function calc_format(sheet_name, sales, resev) {
-  const spreadsheet = SpreadsheetApp.openById(
-    "1ULOWr2Af-szHgNTTiyRqUoZFILh5h5wk3yJqElU40p8"
-  );
+  const spreadsheet = SpreadsheetApp.openById("");
   const sheet = spreadsheet.getSheetByName(sheet_name);
   const summarySheet = spreadsheet.getSheetByName("合計");
   let range = sheet.getDataRange();
