@@ -1,4 +1,4 @@
-// テンプレート　単体
+// テンプレート 単体
 function importCsv(CSV_name, sheet_name) {
   let fileName = CSV_name;
   let spreadsheet = SpreadsheetApp.openById("");
@@ -16,7 +16,7 @@ function importCsv(CSV_name, sheet_name) {
   }
 }
 
-// テンプレート　結合
+// テンプレート 結合
 function importCombinedCSV(CSV_name01, CSV_name02, sheet_name) {
   let fileNames = [CSV_name01, CSV_name02];
   let spreadsheet = SpreadsheetApp.openById("");
